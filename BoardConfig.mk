@@ -1,4 +1,4 @@
-DEVICE_PATH := device/oppo/CPH2071
+DEVICE_PATH := device/oppo/CPH2083
 BOARD_VENDOR := oppo
 
 # Security patch level
@@ -9,4 +9,4 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/framework_compatibility_matrix.xml
 
--include vendor/oppo/CPH2071/BoardConfigVendor.mk
+-include vendor/oppo/CPH2083/BoardConfigVendor.mk

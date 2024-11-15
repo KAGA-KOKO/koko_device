@@ -96,4 +96,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
 
 # Inherit vendor
-$(call inherit-product, vendor/oppo/CPH2071/CPH2071-vendor.mk)
+$(call inherit-product, vendor/oppo/CPH2083/CPH2083-vendor.mk)
