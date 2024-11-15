@@ -1,7 +1,6 @@
 -app/SoterService/SoterService.apk
+-framework/vendor.qti.hardware.soter-V1.0-java.jar
 bin/iwpriv
-bin/kpoc_charger
-etc/init/kpoc_charger.rc
-lib/libshowlogo.so
 lib64/libaptXHD_encoder.so
 lib64/libaptX_encoder.so
+lib64/vendor.qti.hardware.soter@1.0.so

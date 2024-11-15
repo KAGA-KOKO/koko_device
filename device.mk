@@ -59,6 +59,10 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    engineer_vendor_shell.sh \
+    init.oppo.face.sh \
+    init.oppo.face_calib.sh \
+    init.oppo.fingerprints.sh \
     factory_init.connectivity.rc \
     factory_init.project.rc \
     factory_init.rc \
