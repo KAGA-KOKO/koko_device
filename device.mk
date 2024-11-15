@@ -30,8 +30,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+endif
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -61,32 +63,6 @@ PRODUCT_COPY_FILES += \
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
-
-# Ramdisk
-PRODUCT_PACKAGES += \
-    engineer_vendor_shell.sh \
-    init.oppo.face.sh \
-    init.oppo.face_calib.sh \
-    init.oppo.fingerprints.sh \
-    factory_init.connectivity.rc \
-    factory_init.project.rc \
-    factory_init.rc \
-    init.aee.rc \
-    init.ago.rc \
-    init.connectivity.rc \
-    init.modem.rc \
-    init.mt6765.rc \
-    init.mt6765.usb.rc \
-    init.oppo.reserve.rc \
-    init.project.rc \
-    init.sensor_1_0.rc \
-    meta_init.connectivity.rc \
-    meta_init.modem.rc \
-    meta_init.project.rc \
-    meta_init.rc \
-    multi_init.rc \
-    fstab.mt6765 \
-    ueventd.qcom.rc \
 
 # Seccomp
 PRODUCT_COPY_FILES += \
